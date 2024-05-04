@@ -1,0 +1,36 @@
+# Simple Key value Pairs
+person: # Dictionary
+  name: Hriyen
+  age: 23
+  city: Bangalore
+  hobbies: # List
+  - cooking
+  - cycling
+  friends: # Multiple lists
+  - name: friend1
+    age: 23
+  - name: friend2
+    age: 22
+# YAML Document Separator
+---
+apiVersion: v1 # String
+kind: Pod # String
+metadata: # Dictionary
+  name: myapp-pod
+  labels: # Dictionary 
+    app: myapp
+    tier: frontend
+spec:
+  containers: # List
+  - name: myapp
+    image: stachriyen777/acr-myindia-app:v1
+    ports: # List
+    - containerPort: 80
+      protocol: "TCP"
+    - containerPort: 81
+      protocol: "TCP"
+
+
+
+
+
